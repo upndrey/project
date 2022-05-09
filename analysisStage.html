@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анализ выполнения договорных обязательств</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h1>Анализ стадий договора</h1>
+            <ul>
+                <li><a href="/analysis.html">Анализ договоров</a></li>
+                <li><a href="/analysisStage.html" class="active">Анализ стадий договора</a></li>
+                <li><a href="/index.html">Все договоры</a></li>
+            </ul>
+        </div>
+        <div class="selectD">
+            Выбрать договор:
+            <select name="selectD" id="selectD">
+            </select>
+        </div>
+        <div class="period">
+            Выбрать период анализа от <input type="date" id="minDate"> до <input type="date" id="maxDate">
+        </div>
+        <div class="statusEnd">
+            Выбрать по факту выполнения: <select name="" id="isDone">
+                <option value="Все">Все</option>
+                <option value="Выполненные">Выполненные</option>
+                <option value="Не Выполненные">Не Выполненные</option>
+            </select>
+        </div>
+        <div class="statusEnd">
+            <button id="clearFilter">Сбросить фильтры</button>
+        </div>
+        <table class="content"></table>
+    </div>
+    <script src="/stages.js"></script>
+</body>
+</html>

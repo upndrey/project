@@ -1,0 +1,159 @@
+.period {
+    margin-bottom: 10px;
+}
+
+.selectD {
+    margin-bottom: 10px;
+}
+
+.statusEnd {
+    margin-bottom: 10px;
+}
+/* GLOBAL */
+
+.hidden {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 1120px;
+    max-width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #000;
+}
+
+a:visited {
+    color: blue;
+}
+
+a.active {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.menu h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.menu>ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu>ul>li {
+    margin: 5px;
+}
+
+.hiddenLink {
+    display: none;
+}
+
+/* CONTROLS */
+.controls {
+    margin-bottom: 5px;
+}
+
+/* ADDITIONAL */
+
+.additional {
+    margin-bottom: 5px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+}
+
+.table__wrapper {
+    max-width: 100%;
+    overflow: auto;
+}
+
+table>tr:not(:first-child):hover {
+    background: rgb(211, 211, 211);
+}
+
+table>tr.active {
+    background: rgb(211, 211, 211);
+}
+
+table {
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #dddddd;
+	border-collapse: collapse; 
+}
+table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+table td {
+	border: 1px solid #dddddd;
+	padding: 5px;
+}
+
+
+table td input {
+    width: calc(100% - 10px);
+}
+
+table button {
+    width: 100%;
+}
+
+/* COMPANY */
+.company__title,
+.additional {
+    display: flex;
+    flex-direction: column;
+}
+
+.company__title>div,
+.additional>div {
+    display: flex;
+}
+
+.company__title>div>div,
+.additional>div>div {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.company__title>div>div:first-child,
+.additional>div>div:first-child {
+    width: 200px;
+    text-align: right;
+}
+
+.company__title>div>div:last-child,
+.additional>div>div:last-child {
+    flex-grow: 1;
+}
+
+
+.company__title input {
+    width: calc(100% - 10px);
+}
